@@ -14,17 +14,18 @@ import WaitingRoom from "./pages/WaitingRoom";
 import NotFound from "./pages/NotFound";
 import ProtectedRoute from "./components/ProtectedRoute";
 import { SuiClientProvider, WalletProvider } from "@mysten/dapp-kit";
-import { ONECHAIN_CONFIG } from "./config/onechain";
+import { SUI_NETWORK_CONFIG } from "./config/onechain";
 import "@mysten/dapp-kit/dist/index.css";
 
 const queryClient = new QueryClient();
 
-// OneChain network configuration
+// Sui network configuration
 const networks = {
-  "onechain-testnet": {
-    url: ONECHAIN_CONFIG.testnet.rpc,
+  "sui-testnet": {
+    url: SUI_NETWORK_CONFIG.testnet.rpc,
   },
 };
+
 
 const App = () => (
   <QueryClientProvider client={queryClient}>

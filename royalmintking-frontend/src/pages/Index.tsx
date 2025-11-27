@@ -232,8 +232,8 @@ const Index = () => {
 
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                 OneChain is a Sui-compatible consortium blockchain designed for
-                enterprises. NullShot Chess leverages OneChain's speed and
-                security to provide instant, verifiable game results stored
+                enterprises. Royal Mint King Chess leverages OneChain's speed
+                and security to provide instant, verifiable game results stored
                 permanently on-chain.
               </p>
 

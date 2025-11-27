@@ -54,13 +54,13 @@ const Header = () => {
 
           {/* OneWallet Connect Button */}
           <div className="hidden lg:block">
-            <ConnectButton />
-            {currentAccount && (
+            <ConnectButton className="bg-gold" />
+            {/* {currentAccount && (
               <p className="text-xs mt-1">
                 {currentAccount.address.slice(0, 6)}...
                 {currentAccount.address.slice(-4)}
               </p>
-            )}
+            )} */}
           </div>
 
           {/* Mobile Menu Button */}

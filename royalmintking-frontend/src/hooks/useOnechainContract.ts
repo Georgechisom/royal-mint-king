@@ -11,8 +11,9 @@ import {
   CONTRACT_EVENTS,
   GAME_REGISTRY_ID,
   PLAYER_STATS_ID,
-  onechainClient,
+  suiClient,
 } from "@/config/onechain";
+
 import { useState, useEffect, useCallback } from "react";
 
 export const useSubmitAIGame = () => {
