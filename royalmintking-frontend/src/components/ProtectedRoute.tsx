@@ -15,6 +15,7 @@ const ProtectedRoute = ({ children }: ProtectedRouteProps) => {
     if (!currentAccount) {
       toast.error("❌ Please connect your OneWallet first");
       console.error("Wallet not connected!");
+      navigate("/");
       return;
     }
   }, [currentAccount, navigate]);
