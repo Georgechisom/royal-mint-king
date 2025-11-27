@@ -29,7 +29,7 @@ The MCP server is implemented using the `my-chess-agent/mcp-server` repository. 
 
 ## Smart Contract (royal_mint_kingpin.move)
 
-The smart contract is deployed on the Sui Devnet (OneChain compatible), residing in `smartcontract/royal-mint-king/sources/royal_mint_kingpin.move`. It is a Move contract that manages game results and NFT rewards.
+The smart contract is deployed on the Sui Devnet (OneChain compatible), It is a Move contract that manages game results and NFT rewards.
 
 ### Main Features:
 
@@ -48,8 +48,6 @@ The smart contract is deployed on the Sui Devnet (OneChain compatible), residing
 ### Deployment Details:
 
 - **Network**: Sui Testnet
-- **Package ID**: `0x0e84bdd42c19f3cceb6f19b1495ff05536a0dbf06ecaea53fb18f55dd333ce66`
-- **Explorer**: https://suiscan.xyz/devnet/object/0x0e84bdd42c19f3cceb6f19b1495ff05536a0dbf06ecaea53fb18f55dd333ce66
 
 ---
 
@@ -74,13 +72,6 @@ The frontend is a React and TypeScript-powered decentralized application that br
 - TailwindCSS with shadcn UI components for styling.
 - OneChain and Sui
 - Chess.js for chess rules and validations.
-
-### Project Structure Highlights:
-
-- `src/components/chess/ChessBoard3D.tsx`: Main 3D chessboard and game logic.
-- `src/pages/Arena.tsx`: Game interface allowing game configuration and play.
-- `src/components/layout/Header.tsx`: Navigation and wallet integration.
-- `src/utils/blockchain.ts`: Contract interaction logic.
 
 ### Usage and Deployment:
 
