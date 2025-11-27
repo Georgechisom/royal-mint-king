@@ -5,14 +5,15 @@ import { Toaster } from "react-hot-toast";
 import App from "./App.tsx";
 import "./index.css";
 import "@mysten/dapp-kit/dist/index.css";
-import { ONECHAIN_CONFIG } from "./config/onechain.ts";
+import { SUI_NETWORK_CONFIG } from "./config/onechain.ts";
 
-// OneChain network configuration for Sui SDK
+// Sui network configuration for Sui SDK
 const networks = {
-  "onechain-testnet": {
-    url: ONECHAIN_CONFIG.testnet.rpc,
+  "sui-testnet": {
+    url: SUI_NETWORK_CONFIG.testnet.rpc,
   },
 };
+
 
 // Create React Query client
 const queryClient = new QueryClient({
@@ -27,7 +28,8 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById("root")!).render(
   <QueryClientProvider client={queryClient}>
-    <SuiClientProvider networks={networks} defaultNetwork="onechain-testnet">
+    <SuiClientProvider networks={networks} defaultNetwork="sui-testnet">
+
       <WalletProvider autoConnect>
         <App />
         <Toaster

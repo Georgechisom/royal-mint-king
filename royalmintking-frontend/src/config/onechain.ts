@@ -1,20 +1,26 @@
 import { SuiClient } from "@mysten/sui/client";
 
-export const ONECHAIN_CONFIG = {
+// Sui Network Configuration
+export const SUI_NETWORK_CONFIG = {
   testnet: {
     rpc: "https://fullnode.testnet.sui.io:443",
     faucet: "https://faucet.testnet.sui.io",
     explorer: "https://suiscan.xyz/testnet",
   },
+  devnet: {
+    rpc: "https://fullnode.devnet.sui.io:443",
+    faucet: "https://faucet.devnet.sui.io",
+    explorer: "https://suiscan.xyz/devnet",
+  },
   mainnet: {
-    rpc: "https://rpc.mainnet.onelabs.cc:443",
-    explorer: "https://explorer.mainnet.onelabs.cc", // Assumed
+    rpc: "https://fullnode.mainnet.sui.io:443",
+    explorer: "https://suiscan.xyz/mainnet",
   },
 };
 
-// Create OneChain client
-export const onechainClient = new SuiClient({
-  url: ONECHAIN_CONFIG.testnet.rpc,
+// Create Sui client
+export const suiClient = new SuiClient({
+  url: SUI_NETWORK_CONFIG.testnet.rpc,
 });
 
 // Contract configuration
@@ -57,12 +63,12 @@ export const NETWORK = "testnet";
 // Helper function to get explorer URL
 export const getExplorerUrl = (
   txHash: string,
-  network: "devnet" | "testnet" | "onechain" = "testnet"
+  network: "devnet" | "testnet" | "mainnet" = "testnet"
 ) => {
   const baseUrls = {
     devnet: "https://suiscan.xyz/devnet/tx",
     testnet: "https://suiscan.xyz/testnet/tx",
-    onechain: "https://explorer-testnet.onelabs.cc/txblock",
+    mainnet: "https://suiscan.xyz/mainnet/tx",
   };
 
   return `${baseUrls[network]}/${txHash}`;

@@ -41,7 +41,7 @@ https://suiscan.xyz/devnet/object/0xc675b358926a57d7bce3c70018a8fd80fa6228612a68
 https://suiscan.xyz/devnet/object/0x67e1e45625f54ef5354c221a44f63cfb2edffec20b904feb9194547d985c2041
 
 **PlayerStats:**  
-https://suiscan.xyz/devnet/object/0xf661ae612513febdc4b1585ca1c74f73e8210c88f31fc919db033c413d59bbcf
+https://suiscan.xyz/devnet/object/0xbeb8182126f0bf0c01391002023f2be86fe7e040a6345c4bc055329eb3dbb132
 
 ---
 
