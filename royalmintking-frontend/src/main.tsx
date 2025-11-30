@@ -14,14 +14,14 @@ import { NETWORK_CONFIG } from "./config/onechain.ts";
 //   "onechain-testnet": {
 //     url: NETWORK_CONFIG.testnet.rpc,
 //   },
-// } as const;
+// };
 
 // === SUI TESTNET (COMMENTED - Uncomment to switch back) ===
 const networks = {
   "sui-testnet": {
     url: NETWORK_CONFIG.testnet.rpc,
   },
-} as const;
+};
 
 // Create React Query client
 const queryClient = new QueryClient({
@@ -36,8 +36,8 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById("root")!).render(
   <QueryClientProvider client={queryClient}>
-    <SuiClientProvider networks={networks} defaultNetwork="onechain-testnet">
-      {/* Change to "sui-testnet" when switching back to Sui */}
+    <SuiClientProvider networks={networks} defaultNetwork="sui-testnet">
+      {/* Change to "onechain-testnet" when switching to OneChain */}
       <WalletProvider autoConnect>
         <App />
         <Toaster
