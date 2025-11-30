@@ -5,15 +5,23 @@ import { Toaster } from "react-hot-toast";
 import App from "./App.tsx";
 import "./index.css";
 import "@mysten/dapp-kit/dist/index.css";
-import { SUI_NETWORK_CONFIG } from "./config/onechain.ts";
+import { NETWORK_CONFIG } from "./config/onechain.ts";
 
-// Sui network configuration for Sui SDK
+// Network configuration - Toggle by commenting/uncommenting in onechain.ts
+
+// === ONECHAIN TESTNET (ACTIVE) ===
+// const networks = {
+//   "onechain-testnet": {
+//     url: NETWORK_CONFIG.testnet.rpc,
+//   },
+// } as const;
+
+// === SUI TESTNET (COMMENTED - Uncomment to switch back) ===
 const networks = {
   "sui-testnet": {
-    url: SUI_NETWORK_CONFIG.testnet.rpc,
+    url: NETWORK_CONFIG.testnet.rpc,
   },
-};
-
+} as const;
 
 // Create React Query client
 const queryClient = new QueryClient({
@@ -28,8 +36,8 @@ const queryClient = new QueryClient({
 
 createRoot(document.getElementById("root")!).render(
   <QueryClientProvider client={queryClient}>
-    <SuiClientProvider networks={networks} defaultNetwork="sui-testnet">
-
+    <SuiClientProvider networks={networks} defaultNetwork="onechain-testnet">
+      {/* Change to "sui-testnet" when switching back to Sui */}
       <WalletProvider autoConnect>
         <App />
         <Toaster

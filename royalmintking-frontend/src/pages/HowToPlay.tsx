@@ -45,7 +45,7 @@ const HowToPlay = () => {
       icon: <FileSignature className="w-12 h-12" />,
       title: "Submit & Mint NFT",
       description:
-        "When the game ends, sign the result with your wallet. Winners can mint an ERC721 NFT badge on-chain.",
+        "When the game ends, sign the result with your wallet. Winners can mint an NFT badge on-chain.",
       details: [
         "Approve the signature in your wallet",
         "Result is submitted to our smart contract",

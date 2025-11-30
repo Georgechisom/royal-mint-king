@@ -46,9 +46,9 @@ const Index = () => {
               </h1>
 
               <p className="text-base md:text-xl text-muted-foreground mb-8 leading-relaxed">
-                Play immersive chess against humans or NullShot AI. Every
-                victory is immortalized on OneChain with NFT badges. Fair play
-                guaranteed through cryptographic signatures.
+                Play immersive chess against humans or AI. Every victory is
+                immortalized on OneChain with NFT badges. Fair play guaranteed
+                through cryptographic signatures.
               </p>
 
               <div className="flex gap-4 flex-wrap">
@@ -188,7 +188,7 @@ const Index = () => {
                 icon: <Gamepad2 className="w-8 h-8 text-sapphire" />,
                 title: "AI Opponent",
                 description:
-                  "Challenge NullShot AI agent powered by MCP for strategic gameplay",
+                  "Challenge AI agent powered by MCP for strategic gameplay",
               },
             ].map((feature, idx) => (
               <motion.div
@@ -225,18 +225,15 @@ const Index = () => {
                   <Shield className="w-8 h-8 text-gold-foreground" />
                 </div>
               </div>
-
               <h3 className="text-2xl md:text-3xl font-bold text-center mb-4">
                 Built on <span className="text-gold">OneChain</span>
               </h3>
-
               <p className="text-center text-muted-foreground mb-8 max-w-2xl mx-auto">
                 OneChain is a Sui-compatible consortium blockchain designed for
                 enterprises. Royal Mint King Chess leverages OneChain's speed
                 and security to provide instant, verifiable game results stored
                 permanently on-chain.
               </p>
-
               <div className="grid md:grid-cols-3 gap-6 mt-8">
                 <div className="bg-background/50 rounded-lg p-4 text-center">
                   <div className="text-2xl font-bold text-gold mb-1">

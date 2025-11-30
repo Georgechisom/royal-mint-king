@@ -17,7 +17,7 @@ const GameModeSelector = ({ selected, onSelect }: GameModeSelectorProps) => {
     },
     {
       value: "ai" as GameMode,
-      label: "VS NullShot AI",
+      label: "VS AI",
       description: "Challenge our AI agent powered by MCP technology",
       icon: <Bot className="w-12 h-12" />,
     },

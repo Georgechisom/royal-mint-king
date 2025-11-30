@@ -36,11 +36,11 @@ const About = () => {
               </h2>
               <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                 Royal Mint Kingpin Chess reimagines the timeless game of chess
-                for the Web3 era. Built on the NullShot MCP, our dApp combines
-                immersive 3D gameplay with blockchain verification to create a
-                truly modern chess experience. Every game is a journey through
-                luxurious inspired themes, where victories are immortalized as
-                NFT badges on the lisk Sepolia testnet.
+                for the Web3 era. Built with NullShot MCP on OneChain, our dApp
+                combines immersive 3D gameplay with blockchain verification to
+                create a truly modern chess experience. Every game is a journey
+                through luxurious inspired themes, where victories are
+                immortalized as NFT badges on the Sui testnet.
               </p>
             </motion.section>
 
