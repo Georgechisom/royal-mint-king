@@ -574,7 +574,7 @@ const ChessBoard3D = ({
               } else {
                 return (
                   <div className="text-lg md:text-2xl font-bold text-gold">
-                    🤖 NullShot Ai Turn
+                    🤖 Ai Turn
                   </div>
                 );
               }

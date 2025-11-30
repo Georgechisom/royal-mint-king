@@ -20,7 +20,8 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-sm text-muted-foreground">
-              Decentralized chess with on-chain glory. Built on NullShot MCP.
+              Decentralized chess with on-chain glory. Built on NullShot MCP and
+              OneChain.
             </p>
           </div>
 
@@ -101,10 +102,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-border mt-8 pt-8 text-center text-sm text-muted-foreground">
-          <p>
-            © 2025 RoyalMintKing Chess. Built with ♔ for NullShot Hacks. Powered
-            by Thirdweb.
-          </p>
+          <p>© 2025 RoyalMintKing Chess.</p>
         </div>
       </div>
     </footer>
